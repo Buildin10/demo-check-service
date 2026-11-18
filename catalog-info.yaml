@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "demo-check-service"
+  description: "Temporary end-to-end platform validation service"
+  annotations:
+    github.com/project-slug: buildin10/demo-check-service
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/name=demo-check-service'
+  links:
+    - url: https://github.com/Buildin10/gitops/tree/main/apps/demo-check-service
+      title: GitOps deployment
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/team-orders"
+  system: "fulfilment"

@@ -1,0 +1,10 @@
+{
+  "name": "demo-check-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Temporary end-to-end platform validation service",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js"
+  }
+}
